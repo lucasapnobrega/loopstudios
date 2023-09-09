@@ -1,0 +1,251 @@
+.our-creations {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        font-size: 1.8rem;
+        font-family: 'Josefin Sans', sans-serif;
+        text-transform: uppercase;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    &-card {
+        height: 125px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        transition: all .4s;
+        cursor: pointer;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0);
+            opacity: 0;
+            transition: all .4s;
+        }
+
+        &:hover::before {
+            opacity: 0.6;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        &:hover {
+            transform: translateX(7px);
+        }
+   
+        &.card1 {
+            background-image: url(../../images/mobile/image-deep-earth.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &.card2 {
+            background-image: url(../../images/mobile/image-night-arcade.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &.card3 {
+            background-image: url(../../images/mobile/image-soccer-team.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &.card4 {
+            background-image: url(../../images/mobile/image-grid.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &.card5 {
+            background-image: url(../../images/mobile/image-from-above.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &.card6 {
+            background-image: url(../../images/mobile/image-pocket-borealis.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &.card7 {
+            background-image: url(../../images/mobile/image-curiosity.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &.card8 {
+            background-image: url(../../images/mobile/image-fisheye.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        h4 {
+            color: $white;
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 300;
+            max-width: 200px;
+            padding-left: 2rem;
+        }
+    }
+    
+    .seeAll {
+        text-align: center;
+        margin: 2.5rem 0;
+
+        .btn-seeAll {
+            border: 2px solid $black;
+            padding: 1rem 2.2rem;
+            text-transform: uppercase;
+            background-color: transparent;
+            font-weight: bold;
+            letter-spacing: 4px;
+            transition: all .4s;
+
+            &:hover {
+                background-color: $black;
+                color: $white;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .our-creations {
+        h3 {
+            font-size: 2rem;
+        }
+
+        &-cards {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        &-card {
+            width: 47%;
+        }
+    }
+}
+
+@media (min-width: 1250px) {
+    .our-creations {
+        h3 {
+            font-size: 3rem;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .our-creations {
+        position: relative;
+
+        h3 {
+            font-size: 3rem;
+            text-align: left;
+        }
+
+        &-cards {
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 6rem;
+        }
+
+        &-card {
+            width: 21%;
+            height: 450px;
+            position: relative;
+
+            &::before {
+                left: 3%;
+                width: 94%;
+            }
+
+            &:hover {
+                transform: translateY(15px);
+            }
+            
+            &.card1 {
+                background-image: url(../../images/desktop/image-deep-earth.jpg);
+                background-size: contain;
+                margin-bottom: 2rem;
+            }
+
+            &.card2 {
+                background-image: url(../../images/desktop/image-night-arcade.jpg);
+                background-size: contain;
+                margin-bottom: 2rem;
+            }
+
+            &.card3 {
+                background-image: url(../../images/desktop/image-soccer-team.jpg);
+                background-size: contain;
+                margin-bottom: 2rem;
+            }
+
+            &.card4 {
+                background-image: url(../../images/desktop/image-grid.jpg);
+                background-size: contain;
+                margin-bottom: 2rem;
+            }
+
+            &.card5 {
+                background-image: url(../../images/desktop/image-from-above.jpg);
+                background-size: contain;
+            }
+
+            &.card6 {
+                background-image: url(../../images/desktop/image-pocket-borealis.jpg);
+                background-size: contain;
+            }
+
+            &.card7 {
+                background-image: url(../../images/desktop/image-curiosity.jpg);
+                background-size: contain;
+            }
+
+            &.card8 {
+                background-image: url(../../images/desktop/image-fisheye.jpg);
+                background-size: contain;
+            }
+
+            
+
+            h4 {
+                position: absolute;
+                bottom: 20px;
+            }
+        }
+
+        .seeAll {
+            position: absolute;
+            right: 0;
+            top: -30px;
+        }
+    }
+}

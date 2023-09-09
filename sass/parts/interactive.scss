@@ -1,0 +1,119 @@
+.interactive {
+    text-align: center;
+    margin-top: 4rem;
+    
+    &-img img {
+        max-width: 100%;
+    }
+
+    &-content {
+        margin-top: 2rem;
+
+        h3 {
+            font-size: 1.8rem;
+            font-family: 'Josefin Sans', sans-serif;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+
+        p {
+            font-family: 'Alata', sans-serif;
+            color: $darkGray;
+            line-height: 28px;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .interactive-content {
+        h3 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .interactive {
+        position: relative;
+        text-align: left;
+        margin-bottom: 12rem;
+
+        img {
+            width: 60%;
+        }
+
+        &-content {
+            
+            position: absolute;
+            right: 0;
+            top: 35%;
+            width: 550px;
+            background-color: $white;
+            padding: 4rem 2rem 2rem 4rem;
+
+            h3 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1250px) {
+    .interactive{
+        h3 {
+            font-size: 3rem;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .interactive {
+        margin-top: 8rem;
+
+        img {
+            width: 65%;
+        }
+
+        &-content {
+            right: 0;
+            top: 40%;
+            width: 700px;
+            background-color: $white;
+            padding: 6rem;
+
+            h3 {
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 2000px) {
+    .interactive {
+        img {
+            width: 75%;
+        }
+
+        &-content {
+            right: -100px;
+            top: 35%;
+            background-color: $white;
+            padding: 6rem;
+
+            h3 {
+                font-size: 3.5rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+                width: 600px;
+            }
+        }
+    }
+}
