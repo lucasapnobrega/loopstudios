@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@import './variables.scss';
+
+@import './parts/header.scss';
+
+@import './parts/interactive.scss';
+
+@import './parts/ourCreations.scss';
+
+@import './parts/footer.scss';
